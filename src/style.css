@@ -36,9 +36,15 @@ body {
 	background-size: cover;
 }
 
+/* styling for the div holding all of the content: Center it and add spacing to contain the other pages */
+.content {
+	/* Position relative for the footer; maybe header later */
+	position: relative;
+}
+
 /* header styling */
 header {
-	padding: 20px 12px;
+	padding: 14px 12px;
 	background-color: black;
 	opacity: 0.80;
 	text-align: center;
@@ -47,31 +53,67 @@ header {
 }
 
 /* Nav styling */
-.nav-links-section {
+nav {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	align-items: center;
+}
+nav > ul {
 	display: flex;
 	flex-direction: row;
+}
+.nav-links-main {
 	justify-content: space-evenly;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 70%;
+	margin: 0 auto;
+}
+.nav-links-secondary {
+	justify-content: space-evenly;	
 }
 
+
+/* Color the text in the nav items */
+.nav-item > *,
+h1 {
+	font-size: 20px;
+	color: white;
+	font-family: var(--font-family);
+} 
+
+
+/* Style main 3 nav buttons, and then also the links */
 .nav-button {
-	padding: 10px 12px;
 	border-style: solid;
 	border: none;
 	background: inherit;
-	color: inherit;
-	font-family: inherit;
-	font-size: 20px;
+}
+
+nav .nav-button,
+footer a,
+.nav-links-secondary a {
+	padding-bottom: 4px;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.2s ease-in-out;
+}
+/* Now on hover, reveal the bottom border */
+nav .nav-button:hover,
+.footer-nav-links a:hover,
+.nav-links-secondary a:hover {
+	border-bottom: 2px solid white;
+}
+
+/* For the active button, which is the button that indicates the tab being used, we will underline it with border */
+nav .nav-button[data-active] {
+	border-bottom: 2px solid white;
 }
 
 /* footer styling */
 footer {
 	background-color: rgba(0,0,0, 0.3);
+	color: white;
 	text-align: center;
 	padding: 12px 0;	
-	position: fixed;
+	position: absolutes;
 	bottom: 0;
 	width: 100%;
 	display: flex;
@@ -88,37 +130,33 @@ footer .social-icon-img {
 	height: 20px;
 }
 footer a {
-	color: white;
-}
-/* Hide border bottom so that when on hover it appears */
-nav .nav-button,
-footer a {
-	border-bottom: 2px solid transparent;
-	transition: border-bottom 0.2s ease-in-out;
-}
-/* Now on hover, reveal the bottom border */
-nav .nav-button:hover,
-.footer-nav-links a:hover {
-	border-bottom: 2px solid white;
+	color: inherit;
 }
 
 
-/* main-content styling: Center it and add spacing to contain the other pages */
 
 
-/* BOOK-MARK */
+/* Adding vertical margin to the main content section to help with spacing since it's going to be switching tabs */
+.main-content {
+	margin: 16px 0;
+}
+
+
+/* BOOK-MARK: Work on data attribute or active tab, but mainly work on generating stuff in javascript.*/
+
+
+
 
 /* Home content page styling */
-
 /* Welcome section */
-.welcome-section {
-	width: 50%;
-	margin: 24px auto;
-	border-radius:  var(--border-radius);
-	padding: 12px 16px;
+#welcome-section {
 	background-color: rgba(0,0,0, 0.5);
 	color: white;
 	text-align: center;
+	width: 50%;
+	margin: 24px auto;
+	padding: 12px 16px;
+	border-radius:  var(--border-radius);
 	display: flex;
 	flex-direction: column;
 	row-gap: 20px;
@@ -132,4 +170,27 @@ nav .nav-button:hover,
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+}
+/* Styles the home content sections; these sections are different from the welcome section */
+.home-content-card {
+	background-color: rgba(0,0,0, 0.5);
+	color: white;
+	width: 40%;
+	margin: 16px auto;
+	padding: 12px 16px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+} 
+.home-content-card a {
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+	padding: 12px 20px;
+	align-self: flex-end;
+	transition: background-color, color, 0.2s ease-in-out;
+}
+.home-content-card a:hover {
+	background-color: black;
+	color: white;
 }
