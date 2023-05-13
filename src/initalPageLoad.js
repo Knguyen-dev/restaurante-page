@@ -6,9 +6,9 @@ function createHeader() {
 	headerEl.innerHTML = `<nav>
 				<h2>Le Sauce del Diole</h2>
 				<ul class="nav-links-main">
-					<li class="nav-item"><button class="nav-button" data-active>Home</button></li>
-					<li class="nav-item"><button class="nav-button">Menu</button></li>
-					<li class="nav-item"><button class="nav-button">About</button></li>
+					<li class="nav-item"><button class="nav-button" data-active="true" data-page="home">Home</button></li>
+					<li class="nav-item"><button class="nav-button" data-page="menu">Menu</button></li>
+					<li class="nav-item"><button class="nav-button" data-page="about">About</button></li>
 				</ul>
 				<ul class="nav-links-secondary">
 					<li class="nav-item"><a href="#">Register</a></li>
@@ -21,7 +21,7 @@ function createHeader() {
 // Creates and returns the html section for containing the content of the three tabs.
 function createMainContentSection() {
 	const mainContentSection = document.createElement("section");
-	mainContentSection.classList("main-content");
+	mainContentSection.classList.add("main-content");
 	return mainContentSection;
 }
 
@@ -54,8 +54,17 @@ function createFooter() {
 	
 	// Create paragraph tag for dynamic date
 	const currentYear = new Date().getFullYear();
-	const dynamicDateParagraph = `<p>Made by Knguyen-dev <span id='date-el'>${currentYear}</span></p>`;
+	const dynamicDateParagraph = document.createElement("p");
+	dynamicDateParagraph.innerHTML = `Made by Knguyen-dev <span id='date-el'>${currentYear}</span>`;
+
 	footerEl.appendChild(dynamicDateParagraph);
 
 	return footerEl;
+}
+
+// Export these functions so that we can use them in the index.js which is kind of our main development file
+export {
+	createHeader,
+	createMainContentSection,
+	createFooter,
 }

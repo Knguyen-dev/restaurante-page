@@ -15,7 +15,7 @@
 				<h2>Le Sauce del Diole</h2>
 
 				<ul class="nav-links-main">
-					<li class="nav-item"><button class="nav-button" data-active>Home</button></li>
+					<li class="nav-item"><button class="nav-button" data-active=true>Home</button></li>
 					<li class="nav-item"><button class="nav-button">Menu</button></li>
 					<li class="nav-item"><button class="nav-button">About</button></li>
 				</ul>
@@ -25,42 +25,30 @@
 					<li class="nav-item"><a href="#">Account</a></li>
 				</ul>
 			</nav>
-		</header>
+		</header> 
 		
 		<!-- Where content will be shown on the tab switching -->
 		<section class="main-content">
-			
-			<section id="welcome-section">
-				<h1>Come dine with us!</h1>
-				<p>Made with passion and sauce since 1889</p>
-				<img src="./assets/images/chef_flame.jpg" alt="Chef flames" id="home-page-img-el">
 
-				<hr class="page-divider">
-				<p id="business-slogan">Truly one of the restaurants in history</p>
-			</section>
+			<section class="menu-content-section">
+				<!-- Maybe have a div called today's special or special thanks to the chef -->
+				<h1>Here's what's on the menu</h1>
+				<section class="menu-items-grid">
 
-			<section class="home-content-card" id="open-reservation-section">
-				<h1>Book a reservation today</h1>
-				<p>Schedule a reservation with ease online in as quickly as 10 minutes. Accomodations from small groups to large gatherings. </p>
-				<a href="#" id="open-reservation-page-link">Book</a>
-			</section>
 
-			<section class="home-content-card" id="open-event-section">
-				<h1>Preparing for a special event? Say no more!</h1>
-				<p>
-					We're able to setup unique and novel events for our clients. From personalized weddings, scheduling a cruise ship vacation, and even giving our 
-					clients their food whilst sky-diving! We have a history of setting up the impossible and serving up miracles! Just contact us! 
-				</p>
-				<a href="#" id="open-special-events-link">Special Events</a>
-			</section>
+					<div class="menu-item-card">
+						<div class="menu-item-image-container">
+							<img src="./assets/images/chicken_plate.jpg" alt="" class="menu-item-image">
+						</div>
+						<div class="menu-item-info">
+							<h2 class="item-title-el">Title of item</h2>
+							<p class="item-description-el">Description of item</p>
+							<h3 class="item-price-el">Price of item</h3>
+							<button class="order-btn">Order item</button>
+						</div>
 
-			<section class="home-content-card" id="open-news-community-section">
-				<h1>Stay in the loop and keep up with us!</h1>
-				<p>
-					We're always taking the next step in branching out and trying new things. Read up on the news surrounding us and ultimately 
-					get more involved in the community. 
-				</p>
-				<a href="#" id="open-news-community-link">News & Community</a>
+					</div>
+				</section>
 			</section>
 			
 
@@ -83,7 +71,7 @@
 				<li class="nav-item-footer"><a href="#">Email Signup</a></li>
 			</ul>
 
-			<!-- <p id="">This is Kevin</p> -->
+			<p id="">This is Kevin</p> 
 		</footer>
 
 

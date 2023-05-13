@@ -133,16 +133,12 @@ footer a {
 	color: inherit;
 }
 
-
-
-
 /* Adding vertical margin to the main content section to help with spacing since it's going to be switching tabs */
 .main-content {
 	margin: 16px 0;
 }
 
 
-/* BOOK-MARK: Work on data attribute or active tab, but mainly work on generating stuff in javascript.*/
 
 
 
@@ -193,4 +189,34 @@ footer a {
 .home-content-card a:hover {
 	background-color: black;
 	color: white;
+}
+
+
+/* Styling for menu tab or menu-content-section */
+.menu-content-section {
+	margin: 12px 16px;
+	text-align: center;
+	color: white;
+}
+
+/* Styling the menu grid */
+.menu-items-grid {
+	background-color: rgba(0,0,0, 0.5);
+	margin: 0 auto;
+
+	display: grid;
+	width: 70%;
+	height: 400px;
+
+	/* The size of the cards will be kind of limited, but that's okay */
+	grid-template-columns: repeat(2, 1fr);
+	
+	/* Rows are at least 150px or just fits the width of the container if there's too much content inside of it */
+	grid-auto-rows: minmax(150px, max-content);
+	color: inherit;	
+}
+
+/* Styling the cards that display the menu items */
+.menu-item-image {
+	height: 150px;
 }

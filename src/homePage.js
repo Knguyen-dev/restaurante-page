@@ -1,14 +1,17 @@
 
 // Creates content for the home tab
 function createHomeContent(containerSection) {
+	// Clear the containerSection of any html beforehand
+	containerSection.innerHTML = ""; 
+
 	// Create the sections for the home tab
-	homeSectionIDs = ['welcome-section', 'open-reservation-section', 'open-special-event-section', 'open-news-community-section'];
-	homeSectionsHTML = [];
+	const homeSectionIDs = ['welcome-section', 'open-reservation-section', 'open-special-event-section', 'open-news-community-section'];
+	let homeSectionsHTML = [];
 
 	// Loop through the IDs to create section nodes for each of them
 	for (let i = 0; i < homeSectionIDs.length; i++) {
 		// Create section node
-		section = document.createElement("section");
+		const section = document.createElement("section");
 		// If it's the welcome section since index = 0, just assign the id
 		if (i == 0) {
 			section.id = homeSectionIDs[i];
@@ -18,7 +21,7 @@ function createHomeContent(containerSection) {
 			section.classList.add("home-content-card");
 		}
 		// Append the section
-		homeSectionsHTML.append(section);
+		homeSectionsHTML.push(section);
 	}
 
 	// Put the respective html in each of the sections
@@ -50,4 +53,9 @@ function createHomeContent(containerSection) {
 	homeSectionsHTML.forEach(section => {
 		containerSection.appendChild(section);
 	})
+
+	// Return the container node again
+	return containerSection; 
 }
+
+export default createHomeContent;
