@@ -1,9 +1,7 @@
 import "./style.css"
 import {createHeader, createMainContentSection, createFooter} from "./initalPageLoad";
 import createHomeContent from "./homePage";
-
-// Importing images folder
-const imageFolder = require.context("./assets/images", false, /\.(png|jpe?g|svg)$/)
+import createMenuContent from "./menuPage";
 
 // IIFE that auto runs; we have the functions create the base html, but also return an object so that we can 
 // easily access that html later!
@@ -45,16 +43,11 @@ const pageContentModule = (() => {
 
 			// Since button was clicked, call the function that loads the content for that button
 			loadTabContent(btnPageID);
-
-			// add the btnPageID to local storage with key "currentPageID" to represent the most recent page the user is on
-			// so that if they refresh we can direct them to the most recent page they were on.
-			localStorage.setItem("currentPageID", )
-
 		});		
 	});
 
 	return {headerEl, mainContentSection, footerEl, tabBtns};
-}); // remember to call this function later 
+})(); 
 
 // Loads the content for a tab when user wants to click it
 function loadTabContent(pageID) {
@@ -68,7 +61,8 @@ function loadTabContent(pageID) {
 		// Then we get back the new mainContentSection in case we need to use it.
 		pageContentModule.mainContentSection = createHomeContent(pageContentModule.mainContentSection);
 	} else if (pageID == "menu") {
-		console.log("User tried to go to the menu tab");
+		
+		pageContentModule.mainContentSection = createMenuContent(pageContentModule.mainContentSection);
 	} else {
 		console.log("user tried to go to the about/contact tab");
 	}
@@ -76,6 +70,6 @@ function loadTabContent(pageID) {
 
 
  
-// window.addEventListener("DOMContentLoaded", () => {
-// 	loadTabContent("home"); // load the home page
-// });
+window.addEventListener("DOMContentLoaded", () => {
+	loadTabContent("home"); // load the home page
+});

@@ -1,8 +1,17 @@
+:root {
+	--letter-spacing: 4px;
+	--border-radius: 6px;
+	--font-family: monospace;
+	--btn-padding: 10px 12px;
+	--btn-font-weight: 700;
+	--transition: all 0.2s ease-in-out;
+}
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	transition: var(--transition);
 }
 ul, ol {
 	list-style: none;
@@ -13,16 +22,10 @@ a {
 
 button {
 	letter-spacing: var(--letter-spacing);
+	padding: var(--btn-padding);
 	cursor: pointer;
+	font-weight: var(--btn-font-weight);
 }
-
-:root {
-	--letter-spacing: 4px;
-	--border-radius: 6px;
-	--font-family: monospace;
-	--leter-spacing: 4px;
-}
-
 
 /* Have an image as the background of the page */
 body {
@@ -34,12 +37,8 @@ body {
 	background-attachment: fixed;
 	/* Scale dimensions to container and try to maintain aspect ratio */
 	background-size: cover;
-}
-
-/* styling for the div holding all of the content: Center it and add spacing to contain the other pages */
-.content {
-	/* Position relative for the footer; maybe header later */
-	position: relative;
+	font-family: var(--font-family);
+	font-size: 14px;
 }
 
 /* header styling */
@@ -49,7 +48,6 @@ header {
 	opacity: 0.80;
 	text-align: center;
 	color: white;
-	font-family: var(--font-family);
 }
 
 /* Nav styling */
@@ -71,15 +69,12 @@ nav > ul {
 	justify-content: space-evenly;	
 }
 
-
 /* Color the text in the nav items */
 .nav-item > *,
 h1 {
 	font-size: 20px;
 	color: white;
-	font-family: var(--font-family);
 } 
-
 
 /* Style main 3 nav buttons, and then also the links */
 .nav-button {
@@ -93,7 +88,6 @@ footer a,
 .nav-links-secondary a {
 	padding-bottom: 4px;
 	border-bottom: 2px solid transparent;
-	transition: border-bottom 0.2s ease-in-out;
 }
 /* Now on hover, reveal the bottom border */
 nav .nav-button:hover,
@@ -113,13 +107,12 @@ footer {
 	color: white;
 	text-align: center;
 	padding: 12px 0;	
-	position: absolutes;
-	bottom: 0;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	row-gap: 10px;
+	
 }
 /* Make the ul's both flex-boxes */
 footer > ul {
@@ -137,10 +130,6 @@ footer a {
 .main-content {
 	margin: 16px 0;
 }
-
-
-
-
 
 
 /* Home content page styling */
@@ -178,13 +167,16 @@ footer a {
 	flex-direction: column;
 	row-gap: 12px;
 } 
+
+/* Styles link on the home content cards, which looks like a button */
 .home-content-card a {
 	color: black;
+	font-weight: var(--btn-font-weight);
 	background-color: white;
 	border: 2px solid black;
-	padding: 12px 20px;
+	padding: var(--btn-padding);
 	align-self: flex-end;
-	transition: background-color, color, 0.2s ease-in-out;
+	letter-spacing: var(--letter-spacing);
 }
 .home-content-card a:hover {
 	background-color: black;
@@ -203,20 +195,73 @@ footer a {
 .menu-items-grid {
 	background-color: rgba(0,0,0, 0.5);
 	margin: 0 auto;
-
+	padding: 20px 24px;
 	display: grid;
 	width: 70%;
-	height: 400px;
-
 	/* The size of the cards will be kind of limited, but that's okay */
 	grid-template-columns: repeat(2, 1fr);
-	
 	/* Rows are at least 150px or just fits the width of the container if there's too much content inside of it */
-	grid-auto-rows: minmax(150px, max-content);
+	grid-auto-rows: minmax(160px, max-content);
 	color: inherit;	
+	column-gap: 12px;
+	row-gap: 20px;
+}
+
+/* Styling for each menu card */
+.menu-item-card {
+	padding: 8px 12px;
+	border-radius: var(--border-radius);
+	display: flex;
+	color: white;
+	background-color: rgba(0,0,0, 0.7);
 }
 
 /* Styling the cards that display the menu items */
 .menu-item-image {
+	width: 150px;
 	height: 150px;
+	border-radius: var(--border-radius);
+	/* Fixes blank space at bottom of image container */
+	vertical-align: top;
+}
+
+/* Styling for the item info in the menu card */
+.menu-item-info {
+	margin-left: 8px;
+	flex: 1; /*So it takes up remaining space not taken by the image*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu-item-info .item-price-el {
+	font-style: italic;
+}
+
+/* Styling the order button */
+.menu-order-btn {
+	background-color: white;;
+	border: 2px solid black;
+	color: black;
+}
+.menu-order-btn:hover {
+	background-color: black;
+	color: white;
+}
+
+/* Media query for smaller screens  */
+
+/* If screen is 1100px or lower then we change the grid to we better*/
+@media screen and (max-width: 1100px) {
+
+	.menu-items-grid {
+		grid-template-columns: 1fr;
+		width: 60%; /* change size of grid and make it so one item per row*/
+	}
+	.menu-item-card {
+		margin-left: auto; /* since we changed width do margin to center in grid*/
+		margin-right: auto;
+		width: 80%; /* Change the width of the menu item now it's on a smaller screen */
+	}
 }

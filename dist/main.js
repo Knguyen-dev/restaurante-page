@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -55,7 +55,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /* 2 */
 /***/ ((module) => {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -145,7 +144,6 @@ module.exports = function (list, options) {
 /* 3 */
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -212,7 +210,6 @@ module.exports = domAPI;
 /* 4 */
 /***/ ((module) => {
 
-"use strict";
 
 
 var memo = {};
@@ -252,7 +249,6 @@ module.exports = insertBySelector;
 /* 5 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -268,7 +264,6 @@ module.exports = setAttributesWithoutAttributes;
 /* 6 */
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -284,7 +279,6 @@ module.exports = insertStyleElement;
 /* 7 */
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -304,7 +298,6 @@ module.exports = styleTagTransform;
 /* 8 */
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -323,7 +316,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\r\n* {\r\n\tbox-sizing: border-box;\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\nul, ol {\r\n\tlist-style: none;\r\n}\r\na {\r\n\ttext-decoration: none;\r\n}\r\n\r\nbutton {\r\n\tletter-spacing: var(--letter-spacing);\r\n\tcursor: pointer;\r\n}\r\n\r\n:root {\r\n\t--letter-spacing: 4px;\r\n\t--border-radius: 6px;\r\n\t--font-family: monospace;\r\n\t--leter-spacing: 4px;\r\n}\r\n\r\n\r\n/* Have an image as the background of the page */\r\nbody {\r\n\tbackground: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n\tbackground-repeat: no-repeat;\r\n\t/* Properly centers image on page  */\r\n\tbackground-position: center center; \r\n\t/* Stays in place whilst scrolling */\r\n\tbackground-attachment: fixed;\r\n\t/* Scale dimensions to container and try to maintain aspect ratio */\r\n\tbackground-size: cover;\r\n}\r\n\r\n/* styling for the div holding all of the content: Center it and add spacing to contain the other pages */\r\n.content {\r\n\t/* Position relative for the footer; maybe header later */\r\n\tposition: relative;\r\n}\r\n\r\n/* header styling */\r\nheader {\r\n\tpadding: 14px 12px;\r\n\tbackground-color: black;\r\n\topacity: 0.80;\r\n\ttext-align: center;\r\n\tcolor: white;\r\n\tfont-family: var(--font-family);\r\n}\r\n\r\n/* Nav styling */\r\nnav {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 1fr 2fr 1fr;\r\n\talign-items: center;\r\n}\r\nnav > ul {\r\n\tdisplay: flex;\r\n\tflex-direction: row;\r\n}\r\n.nav-links-main {\r\n\tjustify-content: space-evenly;\r\n\twidth: 70%;\r\n\tmargin: 0 auto;\r\n}\r\n.nav-links-secondary {\r\n\tjustify-content: space-evenly;\t\r\n}\r\n\r\n\r\n/* Color the text in the nav items */\r\n.nav-item > *,\r\nh1 {\r\n\tfont-size: 20px;\r\n\tcolor: white;\r\n\tfont-family: var(--font-family);\r\n} \r\n\r\n\r\n/* Style main 3 nav buttons, and then also the links */\r\n.nav-button {\r\n\tborder-style: solid;\r\n\tborder: none;\r\n\tbackground: inherit;\r\n}\r\n\r\nnav .nav-button,\r\nfooter a,\r\n.nav-links-secondary a {\r\n\tpadding-bottom: 4px;\r\n\tborder-bottom: 2px solid transparent;\r\n\ttransition: border-bottom 0.2s ease-in-out;\r\n}\r\n/* Now on hover, reveal the bottom border */\r\nnav .nav-button:hover,\r\n.footer-nav-links a:hover,\r\n.nav-links-secondary a:hover {\r\n\tborder-bottom: 2px solid white;\r\n}\r\n\r\n/* For the active button, which is the button that indicates the tab being used, we will underline it with border */\r\nnav .nav-button[data-active] {\r\n\tborder-bottom: 2px solid white;\r\n}\r\n\r\n/* footer styling */\r\nfooter {\r\n\tbackground-color: rgba(0,0,0, 0.3);\r\n\tcolor: white;\r\n\ttext-align: center;\r\n\tpadding: 12px 0;\t\r\n\tposition: absolutes;\r\n\tbottom: 0;\r\n\twidth: 100%;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\talign-items: center;\r\n\trow-gap: 10px;\r\n}\r\n/* Make the ul's both flex-boxes */\r\nfooter > ul {\r\n\tdisplay: flex;\r\n\tcolumn-gap: 30px;\r\n}\r\nfooter .social-icon-img {\r\n\theight: 20px;\r\n}\r\nfooter a {\r\n\tcolor: inherit;\r\n}\r\n\r\n/* Adding vertical margin to the main content section to help with spacing since it's going to be switching tabs */\r\n.main-content {\r\n\tmargin: 16px 0;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n/* Home content page styling */\r\n/* Welcome section */\r\n#welcome-section {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tcolor: white;\r\n\ttext-align: center;\r\n\twidth: 50%;\r\n\tmargin: 24px auto;\r\n\tpadding: 12px 16px;\r\n\tborder-radius:  var(--border-radius);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\trow-gap: 20px;\r\n\talign-items: center;\r\n}\r\n#home-page-img-el {\r\n\twidth: 200px;\r\n\tborder-radius: var(--border-radius);\t\r\n}\r\n.page-divider {\r\n\twidth: 50%;\r\n\tmargin-left: auto;\r\n\tmargin-right: auto;\r\n}\r\n/* Styles the home content sections; these sections are different from the welcome section */\r\n.home-content-card {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tcolor: white;\r\n\twidth: 40%;\r\n\tmargin: 16px auto;\r\n\tpadding: 12px 16px;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\trow-gap: 12px;\r\n} \r\n.home-content-card a {\r\n\tcolor: black;\r\n\tbackground-color: white;\r\n\tborder: 2px solid black;\r\n\tpadding: 12px 20px;\r\n\talign-self: flex-end;\r\n\ttransition: background-color, color, 0.2s ease-in-out;\r\n}\r\n.home-content-card a:hover {\r\n\tbackground-color: black;\r\n\tcolor: white;\r\n}\r\n\r\n\r\n/* Styling for menu tab or menu-content-section */\r\n.menu-content-section {\r\n\tmargin: 12px 16px;\r\n\ttext-align: center;\r\n\tcolor: white;\r\n}\r\n\r\n/* Styling the menu grid */\r\n.menu-items-grid {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tmargin: 0 auto;\r\n\r\n\tdisplay: grid;\r\n\twidth: 70%;\r\n\theight: 400px;\r\n\r\n\t/* The size of the cards will be kind of limited, but that's okay */\r\n\tgrid-template-columns: repeat(2, 1fr);\r\n\t\r\n\t/* Rows are at least 150px or just fits the width of the container if there's too much content inside of it */\r\n\tgrid-auto-rows: minmax(150px, max-content);\r\n\tcolor: inherit;\t\r\n}\r\n\r\n/* Styling the cards that display the menu items */\r\n.menu-item-image {\r\n\theight: 150px;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n\t--letter-spacing: 4px;\r\n\t--border-radius: 6px;\r\n\t--font-family: monospace;\r\n\t--btn-padding: 10px 12px;\r\n\t--btn-font-weight: 700;\r\n\t--transition: all 0.2s ease-in-out;\r\n}\r\n\r\n* {\r\n\tbox-sizing: border-box;\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\ttransition: var(--transition);\r\n}\r\nul, ol {\r\n\tlist-style: none;\r\n}\r\na {\r\n\ttext-decoration: none;\r\n}\r\n\r\nbutton {\r\n\tletter-spacing: var(--letter-spacing);\r\n\tpadding: var(--btn-padding);\r\n\tcursor: pointer;\r\n\tfont-weight: var(--btn-font-weight);\r\n}\r\n\r\n/* Have an image as the background of the page */\r\nbody {\r\n\tbackground: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n\tbackground-repeat: no-repeat;\r\n\t/* Properly centers image on page  */\r\n\tbackground-position: center center; \r\n\t/* Stays in place whilst scrolling */\r\n\tbackground-attachment: fixed;\r\n\t/* Scale dimensions to container and try to maintain aspect ratio */\r\n\tbackground-size: cover;\r\n\tfont-family: var(--font-family);\r\n\tfont-size: 14px;\r\n}\r\n\r\n/* header styling */\r\nheader {\r\n\tpadding: 14px 12px;\r\n\tbackground-color: black;\r\n\topacity: 0.80;\r\n\ttext-align: center;\r\n\tcolor: white;\r\n}\r\n\r\n/* Nav styling */\r\nnav {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 1fr 2fr 1fr;\r\n\talign-items: center;\r\n}\r\nnav > ul {\r\n\tdisplay: flex;\r\n\tflex-direction: row;\r\n}\r\n.nav-links-main {\r\n\tjustify-content: space-evenly;\r\n\twidth: 70%;\r\n\tmargin: 0 auto;\r\n}\r\n.nav-links-secondary {\r\n\tjustify-content: space-evenly;\t\r\n}\r\n\r\n/* Color the text in the nav items */\r\n.nav-item > *,\r\nh1 {\r\n\tfont-size: 20px;\r\n\tcolor: white;\r\n} \r\n\r\n/* Style main 3 nav buttons, and then also the links */\r\n.nav-button {\r\n\tborder-style: solid;\r\n\tborder: none;\r\n\tbackground: inherit;\r\n}\r\n\r\nnav .nav-button,\r\nfooter a,\r\n.nav-links-secondary a {\r\n\tpadding-bottom: 4px;\r\n\tborder-bottom: 2px solid transparent;\r\n}\r\n/* Now on hover, reveal the bottom border */\r\nnav .nav-button:hover,\r\n.footer-nav-links a:hover,\r\n.nav-links-secondary a:hover {\r\n\tborder-bottom: 2px solid white;\r\n}\r\n\r\n/* For the active button, which is the button that indicates the tab being used, we will underline it with border */\r\nnav .nav-button[data-active] {\r\n\tborder-bottom: 2px solid white;\r\n}\r\n\r\n/* footer styling */\r\nfooter {\r\n\tbackground-color: rgba(0,0,0, 0.3);\r\n\tcolor: white;\r\n\ttext-align: center;\r\n\tpadding: 12px 0;\t\r\n\twidth: 100%;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\talign-items: center;\r\n\trow-gap: 10px;\r\n\t\r\n}\r\n/* Make the ul's both flex-boxes */\r\nfooter > ul {\r\n\tdisplay: flex;\r\n\tcolumn-gap: 30px;\r\n}\r\nfooter .social-icon-img {\r\n\theight: 20px;\r\n}\r\nfooter a {\r\n\tcolor: inherit;\r\n}\r\n\r\n/* Adding vertical margin to the main content section to help with spacing since it's going to be switching tabs */\r\n.main-content {\r\n\tmargin: 16px 0;\r\n}\r\n\r\n\r\n/* Home content page styling */\r\n/* Welcome section */\r\n#welcome-section {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tcolor: white;\r\n\ttext-align: center;\r\n\twidth: 50%;\r\n\tmargin: 24px auto;\r\n\tpadding: 12px 16px;\r\n\tborder-radius:  var(--border-radius);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\trow-gap: 20px;\r\n\talign-items: center;\r\n}\r\n#home-page-img-el {\r\n\twidth: 200px;\r\n\tborder-radius: var(--border-radius);\t\r\n}\r\n.page-divider {\r\n\twidth: 50%;\r\n\tmargin-left: auto;\r\n\tmargin-right: auto;\r\n}\r\n/* Styles the home content sections; these sections are different from the welcome section */\r\n.home-content-card {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tcolor: white;\r\n\twidth: 40%;\r\n\tmargin: 16px auto;\r\n\tpadding: 12px 16px;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\trow-gap: 12px;\r\n} \r\n\r\n/* Styles link on the home content cards, which looks like a button */\r\n.home-content-card a {\r\n\tcolor: black;\r\n\tfont-weight: var(--btn-font-weight);\r\n\tbackground-color: white;\r\n\tborder: 2px solid black;\r\n\tpadding: var(--btn-padding);\r\n\talign-self: flex-end;\r\n\tletter-spacing: var(--letter-spacing);\r\n}\r\n.home-content-card a:hover {\r\n\tbackground-color: black;\r\n\tcolor: white;\r\n}\r\n\r\n\r\n/* Styling for menu tab or menu-content-section */\r\n.menu-content-section {\r\n\tmargin: 12px 16px;\r\n\ttext-align: center;\r\n\tcolor: white;\r\n}\r\n\r\n/* Styling the menu grid */\r\n.menu-items-grid {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tmargin: 0 auto;\r\n\tpadding: 20px 24px;\r\n\tdisplay: grid;\r\n\twidth: 70%;\r\n\t/* The size of the cards will be kind of limited, but that's okay */\r\n\tgrid-template-columns: repeat(2, 1fr);\r\n\t/* Rows are at least 150px or just fits the width of the container if there's too much content inside of it */\r\n\tgrid-auto-rows: minmax(160px, max-content);\r\n\tcolor: inherit;\t\r\n\tcolumn-gap: 12px;\r\n\trow-gap: 20px;\r\n}\r\n\r\n/* Styling for each menu card */\r\n.menu-item-card {\r\n\tpadding: 8px 12px;\r\n\tborder-radius: var(--border-radius);\r\n\tdisplay: flex;\r\n\tcolor: white;\r\n\tbackground-color: rgba(0,0,0, 0.7);\r\n}\r\n\r\n/* Styling the cards that display the menu items */\r\n.menu-item-image {\r\n\twidth: 150px;\r\n\theight: 150px;\r\n\tborder-radius: var(--border-radius);\r\n\t/* Fixes blank space at bottom of image container */\r\n\tvertical-align: top;\r\n}\r\n\r\n/* Styling for the item info in the menu card */\r\n.menu-item-info {\r\n\tmargin-left: 8px;\r\n\tflex: 1; /*So it takes up remaining space not taken by the image*/\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\talign-items: center;\r\n\tjustify-content: space-between;\r\n}\r\n\r\n.menu-item-info .item-price-el {\r\n\tfont-style: italic;\r\n}\r\n\r\n/* Styling the order button */\r\n.menu-order-btn {\r\n\tbackground-color: white;;\r\n\tborder: 2px solid black;\r\n\tcolor: black;\r\n}\r\n.menu-order-btn:hover {\r\n\tbackground-color: black;\r\n\tcolor: white;\r\n}\r\n\r\n/* Media query for smaller screens  */\r\n\r\n/* If screen is 1100px or lower then we change the grid to we better*/\r\n@media screen and (max-width: 1100px) {\r\n\r\n\t.menu-items-grid {\r\n\t\tgrid-template-columns: 1fr;\r\n\t\twidth: 60%; /* change size of grid and make it so one item per row*/\r\n\t}\r\n\t.menu-item-card {\r\n\t\tmargin-left: auto; /* since we changed width do margin to center in grid*/\r\n\t\tmargin-right: auto;\r\n\t\twidth: 80%; /* Change the width of the menu item now it's on a smaller screen */\r\n\t}\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -332,7 +325,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\r\n* {\r\n\tbox-sizing: border-box;\r
 /* 9 */
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (i) {
@@ -343,7 +335,6 @@ module.exports = function (i) {
 /* 10 */
 /***/ ((module) => {
 
-"use strict";
 
 
 /*
@@ -434,7 +425,6 @@ module.exports = function (cssWithMappingToString) {
 /* 11 */
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (url, options) {
@@ -466,14 +456,12 @@ module.exports = function (url, options) {
 /* 12 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 module.exports = __webpack_require__.p + "assets/images/chef_background.jpg";
 
 /***/ }),
 /* 13 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "createFooter": () => (/* binding */ createFooter),
@@ -551,7 +539,6 @@ function createFooter() {
 /* 14 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -620,79 +607,119 @@ function createHomeContent(containerSection) {
 
 /***/ }),
 /* 15 */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-var map = {
-	"./chef_background.jpg": 12,
-	"./chef_flame.jpg": 16,
-	"./chicken_plate.jpg": 17,
-	"./fried_potato_balls.jpg": 18,
-	"./ice_cream_plate.jpg": 19,
-	"./spaghetti_plate.jpg": 20,
-	"./veggie_plate.jpg": 21
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// For the menu page
+// array of objects that each represent menu items
+const menuItemsInfo = [
+	{
+		"menu-item-title": "Chicken Monsieur",
+		"item-description": "A chicken dish for french people",
+		'item-price': 12.99,
+		"img-src": "./assets/images/chicken_plate.jpg",
+		"itemID": 1,
+	},
+	{
+		"menu-item-title": "Pommes Dauphine",
+		"item-description": "A potato dish for french people",
+		'item-price': 7.50,
+		"img-src": "./assets/images/fried_potato_balls.jpg",  
+		"itemID": 2,
+	},
+	{
+		"menu-item-title": "Gelato",
+		"item-description": "An ice cream plate for italian people",
+		'item-price': 18.50,
+		"img-src": "./assets/images/ice_Cream_plate.jpg",
+		"itemID": 3,
+	},
+	{
+		"menu-item-title": "Spaghetti-alla chitarra",
+		"item-description": "A pasta dish from Italians imported from Italy.",
+		'item-price': 15.99,
+		"img-src": "./assets/images/spaghetti_plate.jpg", 
+		"itemID": 4,
+	},
+	{
+		"menu-item-title": "Crudites",
+		"item-description": "A vegetable dish from Paris and made with authentic french vegetables",
+		'item-price': 12.99,
+		"img-src": "./assets/images/veggie_plate.jpg",  
+		"itemID": 5,
+	},
+];
+
+// Function for creating menu content such as grid and grid items, alongside a container for the grid
+function createMenuContent(containerSection) {
+	// Create the section that contains all of the elements and content for the menu tab
+	const menuContentSection = document.createElement("section");
+	menuContentSection.classList.add("menu-content-section");
+
+	// Create the grid that conatins the menu item, represented by rectangular cards 
+	const menuGrid = document.createElement("section");
+	menuGrid.classList.add("menu-items-grid");
+	menuContentSection.appendChild(menuGrid); // add the grid to the content section
+
+	// Loop through the menuItemsInfo array and create a menu card for each, then put that menu card on the grid
+	menuItemsInfo.forEach(menuItem => {
+		// Create the card
+		const menuCard = document.createElement("div");
+		menuCard.classList.add("menu-item-card");
+
+		// Create the image container and image for menu card
+		const imageContainer = document.createElement("div"); // Create div and img and add the classes
+		imageContainer.classList.add("menu-item-image-container");
+
+		const itemImageEl = document.createElement("img");
+		itemImageEl.classList.add("menu-item-image");
+		itemImageEl.src = menuItem['img-src']; // assign the image source to the img-src attribute of the current object in menuItemsInfo that we're looping through
+		imageContainer.appendChild(itemImageEl) // add the item image to the image container
+
+		// Create menu item info section of the menuCard
+		const menuItemInfoSection = document.createElement("div");
+		menuItemInfoSection.classList.add("menu-item-info");
+
+		// Create title, description, price and elements with the menu order button
+		const itemTitleEl = document.createElement("h2");
+		itemTitleEl.classList.add("item-title-el");
+		itemTitleEl.textContent = menuItem["menu-item-title"];
+		menuItemInfoSection.appendChild(itemTitleEl);
+
+		const itemDescriptionEl = document.createElement("p");
+		itemDescriptionEl.classList.add("item-description-el");
+		itemDescriptionEl.textContent = menuItem["item-description"];
+		menuItemInfoSection.appendChild(itemDescriptionEl);
+
+		const itemPriceEl = document.createElement("h3");
+		itemPriceEl.classList.add("item-price-el");
+		itemPriceEl.textContent = `Price: $${menuItem["item-price"]}`;
+		menuItemInfoSection.appendChild(itemPriceEl);
+
+		const menuOrderBtn = document.createElement("button");
+		menuOrderBtn.classList.add("menu-order-btn");
+		// Put a data attribute called itemID on the button; turn it into a string since data attribute have to be string values
+		// This is so that in the future if you want a shopping-cart esque feature, you could have this attribute as a reference to the database
+		// or something similar. 
+		menuOrderBtn.setAttribute("data-itemID", menuItem["itemID"].toString());
+		menuOrderBtn.textContent = "Order item";
+		menuItemInfoSection.appendChild(menuOrderBtn);
+
+		// Put the imageContainer and menuItemInfoSection inside our now completed menu card
+		menuCard.appendChild(imageContainer);
+		menuCard.appendChild(menuItemInfoSection);
+		// Place the completed menu card inside the grid.
+		menuGrid.appendChild(menuCard);
+	});
+	// Place the menu content section inside the container; then return containerSection
+	containerSection.appendChild(menuContentSection);
+	return containerSection;
 };
 
-
-function webpackContext(req) {
-	var id = webpackContextResolve(req);
-	return __webpack_require__(id);
-}
-function webpackContextResolve(req) {
-	if(!__webpack_require__.o(map, req)) {
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
-	}
-	return map[req];
-}
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = 15;
-
-/***/ }),
-/* 16 */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/images/chef_flame.jpg";
-
-/***/ }),
-/* 17 */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/images/chicken_plate.jpg";
-
-/***/ }),
-/* 18 */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/images/fried_potato_balls.jpg";
-
-/***/ }),
-/* 19 */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/images/ice_cream_plate.jpg";
-
-/***/ }),
-/* 20 */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/images/spaghetti_plate.jpg";
-
-/***/ }),
-/* 21 */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/images/veggie_plate.jpg";
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createMenuContent);
 
 /***/ })
 /******/ 	]);
@@ -833,19 +860,17 @@ module.exports = __webpack_require__.p + "assets/images/veggie_plate.jpg";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _initalPageLoad__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
 /* harmony import */ var _homePage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
+/* harmony import */ var _menuPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
 
 
 
 
-// Importing images folder
-const imageFolder = __webpack_require__(15)
 
 // IIFE that auto runs; we have the functions create the base html, but also return an object so that we can 
 // easily access that html later!
@@ -887,16 +912,11 @@ const pageContentModule = (() => {
 
 			// Since button was clicked, call the function that loads the content for that button
 			loadTabContent(btnPageID);
-
-			// add the btnPageID to local storage with key "currentPageID" to represent the most recent page the user is on
-			// so that if they refresh we can direct them to the most recent page they were on.
-			localStorage.setItem("currentPageID", )
-
 		});		
 	});
 
 	return {headerEl, mainContentSection, footerEl, tabBtns};
-}); // remember to call this function later 
+})(); 
 
 // Loads the content for a tab when user wants to click it
 function loadTabContent(pageID) {
@@ -910,7 +930,8 @@ function loadTabContent(pageID) {
 		// Then we get back the new mainContentSection in case we need to use it.
 		pageContentModule.mainContentSection = (0,_homePage__WEBPACK_IMPORTED_MODULE_2__["default"])(pageContentModule.mainContentSection);
 	} else if (pageID == "menu") {
-		console.log("User tried to go to the menu tab");
+		
+		pageContentModule.mainContentSection = (0,_menuPage__WEBPACK_IMPORTED_MODULE_3__["default"])(pageContentModule.mainContentSection);
 	} else {
 		console.log("user tried to go to the about/contact tab");
 	}
@@ -918,9 +939,9 @@ function loadTabContent(pageID) {
 
 
  
-// window.addEventListener("DOMContentLoaded", () => {
-// 	loadTabContent("home"); // load the home page
-// });
+window.addEventListener("DOMContentLoaded", () => {
+	loadTabContent("home"); // load the home page
+});
 })();
 
 /******/ })()
