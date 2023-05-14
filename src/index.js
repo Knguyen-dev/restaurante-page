@@ -2,6 +2,8 @@ import "./style.css"
 import {createHeader, createMainContentSection, createFooter} from "./initalPageLoad";
 import createHomeContent from "./homePage";
 import createMenuContent from "./menuPage";
+import createAboutContent from "./aboutPage";
+
 
 // IIFE that auto runs; we have the functions create the base html, but also return an object so that we can 
 // easily access that html later!
@@ -19,9 +21,6 @@ const pageContentModule = (() => {
 
 	// Get the tab buttons; let's also create the logic for tab switching
 	const tabBtns = headerEl.querySelectorAll(".nav-button");
-
-	// Represents the data-page attribute of the active button; this allows us to keep track of what tab we're currently on
-	// It will later help with persisting on the page the user was last on.
 
 	// Create event listener for all buttons
 	tabBtns.forEach(btn => {
@@ -61,15 +60,13 @@ function loadTabContent(pageID) {
 		// Then we get back the new mainContentSection in case we need to use it.
 		pageContentModule.mainContentSection = createHomeContent(pageContentModule.mainContentSection);
 	} else if (pageID == "menu") {
-		
 		pageContentModule.mainContentSection = createMenuContent(pageContentModule.mainContentSection);
 	} else {
-		console.log("user tried to go to the about/contact tab");
+		pageContentModule.mainContentSection = createAboutContent(pageContentModule.mainContentSection);
 	}
 }
 
-
- 
+// On window load we just load the home page content
 window.addEventListener("DOMContentLoaded", () => {
 	loadTabContent("home"); // load the home page
 });

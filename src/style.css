@@ -41,6 +41,11 @@ body {
 	font-size: 14px;
 }
 
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
 /* header styling */
 header {
 	padding: 14px 12px;
@@ -103,6 +108,7 @@ nav .nav-button[data-active] {
 
 /* footer styling */
 footer {
+	justify-self: flex-end;
 	background-color: rgba(0,0,0, 0.3);
 	color: white;
 	text-align: center;
@@ -111,8 +117,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	row-gap: 10px;
-	
+	row-gap: 10px;	
 }
 /* Make the ul's both flex-boxes */
 footer > ul {
@@ -130,7 +135,6 @@ footer a {
 .main-content {
 	margin: 16px 0;
 }
-
 
 /* Home content page styling */
 /* Welcome section */
@@ -250,6 +254,42 @@ footer a {
 	color: white;
 }
 
+/* About page styling */
+.about-content {
+	background-color: rgba(0,0,0, 0.5);
+	width: 50%;
+	margin: 0 auto;
+	height: 500px;
+	color: white;
+	padding: 20px 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Styling for the quote */
+blockquote {
+	quotes: "\201C" "\201D"; /*sets quotation marks to be used*/
+}
+blockquote::before {
+	content: open-quote;
+}
+blockquote::after {
+	content: close-quote;
+}
+#quote-text {
+	display: inline;
+}
+
+/* Styling for the section containing contact and restaurant information */
+.contact-info-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 12px;
+}
+
 /* Media query for smaller screens  */
 
 /* If screen is 1100px or lower then we change the grid to we better*/
@@ -265,3 +305,4 @@ footer a {
 		width: 80%; /* Change the width of the menu item now it's on a smaller screen */
 	}
 }
+

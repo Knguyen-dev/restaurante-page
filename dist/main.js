@@ -316,7 +316,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n\t--letter-spacing: 4px;\r\n\t--border-radius: 6px;\r\n\t--font-family: monospace;\r\n\t--btn-padding: 10px 12px;\r\n\t--btn-font-weight: 700;\r\n\t--transition: all 0.2s ease-in-out;\r\n}\r\n\r\n* {\r\n\tbox-sizing: border-box;\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\ttransition: var(--transition);\r\n}\r\nul, ol {\r\n\tlist-style: none;\r\n}\r\na {\r\n\ttext-decoration: none;\r\n}\r\n\r\nbutton {\r\n\tletter-spacing: var(--letter-spacing);\r\n\tpadding: var(--btn-padding);\r\n\tcursor: pointer;\r\n\tfont-weight: var(--btn-font-weight);\r\n}\r\n\r\n/* Have an image as the background of the page */\r\nbody {\r\n\tbackground: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n\tbackground-repeat: no-repeat;\r\n\t/* Properly centers image on page  */\r\n\tbackground-position: center center; \r\n\t/* Stays in place whilst scrolling */\r\n\tbackground-attachment: fixed;\r\n\t/* Scale dimensions to container and try to maintain aspect ratio */\r\n\tbackground-size: cover;\r\n\tfont-family: var(--font-family);\r\n\tfont-size: 14px;\r\n}\r\n\r\n/* header styling */\r\nheader {\r\n\tpadding: 14px 12px;\r\n\tbackground-color: black;\r\n\topacity: 0.80;\r\n\ttext-align: center;\r\n\tcolor: white;\r\n}\r\n\r\n/* Nav styling */\r\nnav {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 1fr 2fr 1fr;\r\n\talign-items: center;\r\n}\r\nnav > ul {\r\n\tdisplay: flex;\r\n\tflex-direction: row;\r\n}\r\n.nav-links-main {\r\n\tjustify-content: space-evenly;\r\n\twidth: 70%;\r\n\tmargin: 0 auto;\r\n}\r\n.nav-links-secondary {\r\n\tjustify-content: space-evenly;\t\r\n}\r\n\r\n/* Color the text in the nav items */\r\n.nav-item > *,\r\nh1 {\r\n\tfont-size: 20px;\r\n\tcolor: white;\r\n} \r\n\r\n/* Style main 3 nav buttons, and then also the links */\r\n.nav-button {\r\n\tborder-style: solid;\r\n\tborder: none;\r\n\tbackground: inherit;\r\n}\r\n\r\nnav .nav-button,\r\nfooter a,\r\n.nav-links-secondary a {\r\n\tpadding-bottom: 4px;\r\n\tborder-bottom: 2px solid transparent;\r\n}\r\n/* Now on hover, reveal the bottom border */\r\nnav .nav-button:hover,\r\n.footer-nav-links a:hover,\r\n.nav-links-secondary a:hover {\r\n\tborder-bottom: 2px solid white;\r\n}\r\n\r\n/* For the active button, which is the button that indicates the tab being used, we will underline it with border */\r\nnav .nav-button[data-active] {\r\n\tborder-bottom: 2px solid white;\r\n}\r\n\r\n/* footer styling */\r\nfooter {\r\n\tbackground-color: rgba(0,0,0, 0.3);\r\n\tcolor: white;\r\n\ttext-align: center;\r\n\tpadding: 12px 0;\t\r\n\twidth: 100%;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\talign-items: center;\r\n\trow-gap: 10px;\r\n\t\r\n}\r\n/* Make the ul's both flex-boxes */\r\nfooter > ul {\r\n\tdisplay: flex;\r\n\tcolumn-gap: 30px;\r\n}\r\nfooter .social-icon-img {\r\n\theight: 20px;\r\n}\r\nfooter a {\r\n\tcolor: inherit;\r\n}\r\n\r\n/* Adding vertical margin to the main content section to help with spacing since it's going to be switching tabs */\r\n.main-content {\r\n\tmargin: 16px 0;\r\n}\r\n\r\n\r\n/* Home content page styling */\r\n/* Welcome section */\r\n#welcome-section {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tcolor: white;\r\n\ttext-align: center;\r\n\twidth: 50%;\r\n\tmargin: 24px auto;\r\n\tpadding: 12px 16px;\r\n\tborder-radius:  var(--border-radius);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\trow-gap: 20px;\r\n\talign-items: center;\r\n}\r\n#home-page-img-el {\r\n\twidth: 200px;\r\n\tborder-radius: var(--border-radius);\t\r\n}\r\n.page-divider {\r\n\twidth: 50%;\r\n\tmargin-left: auto;\r\n\tmargin-right: auto;\r\n}\r\n/* Styles the home content sections; these sections are different from the welcome section */\r\n.home-content-card {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tcolor: white;\r\n\twidth: 40%;\r\n\tmargin: 16px auto;\r\n\tpadding: 12px 16px;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\trow-gap: 12px;\r\n} \r\n\r\n/* Styles link on the home content cards, which looks like a button */\r\n.home-content-card a {\r\n\tcolor: black;\r\n\tfont-weight: var(--btn-font-weight);\r\n\tbackground-color: white;\r\n\tborder: 2px solid black;\r\n\tpadding: var(--btn-padding);\r\n\talign-self: flex-end;\r\n\tletter-spacing: var(--letter-spacing);\r\n}\r\n.home-content-card a:hover {\r\n\tbackground-color: black;\r\n\tcolor: white;\r\n}\r\n\r\n\r\n/* Styling for menu tab or menu-content-section */\r\n.menu-content-section {\r\n\tmargin: 12px 16px;\r\n\ttext-align: center;\r\n\tcolor: white;\r\n}\r\n\r\n/* Styling the menu grid */\r\n.menu-items-grid {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tmargin: 0 auto;\r\n\tpadding: 20px 24px;\r\n\tdisplay: grid;\r\n\twidth: 70%;\r\n\t/* The size of the cards will be kind of limited, but that's okay */\r\n\tgrid-template-columns: repeat(2, 1fr);\r\n\t/* Rows are at least 150px or just fits the width of the container if there's too much content inside of it */\r\n\tgrid-auto-rows: minmax(160px, max-content);\r\n\tcolor: inherit;\t\r\n\tcolumn-gap: 12px;\r\n\trow-gap: 20px;\r\n}\r\n\r\n/* Styling for each menu card */\r\n.menu-item-card {\r\n\tpadding: 8px 12px;\r\n\tborder-radius: var(--border-radius);\r\n\tdisplay: flex;\r\n\tcolor: white;\r\n\tbackground-color: rgba(0,0,0, 0.7);\r\n}\r\n\r\n/* Styling the cards that display the menu items */\r\n.menu-item-image {\r\n\twidth: 150px;\r\n\theight: 150px;\r\n\tborder-radius: var(--border-radius);\r\n\t/* Fixes blank space at bottom of image container */\r\n\tvertical-align: top;\r\n}\r\n\r\n/* Styling for the item info in the menu card */\r\n.menu-item-info {\r\n\tmargin-left: 8px;\r\n\tflex: 1; /*So it takes up remaining space not taken by the image*/\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\talign-items: center;\r\n\tjustify-content: space-between;\r\n}\r\n\r\n.menu-item-info .item-price-el {\r\n\tfont-style: italic;\r\n}\r\n\r\n/* Styling the order button */\r\n.menu-order-btn {\r\n\tbackground-color: white;;\r\n\tborder: 2px solid black;\r\n\tcolor: black;\r\n}\r\n.menu-order-btn:hover {\r\n\tbackground-color: black;\r\n\tcolor: white;\r\n}\r\n\r\n/* Media query for smaller screens  */\r\n\r\n/* If screen is 1100px or lower then we change the grid to we better*/\r\n@media screen and (max-width: 1100px) {\r\n\r\n\t.menu-items-grid {\r\n\t\tgrid-template-columns: 1fr;\r\n\t\twidth: 60%; /* change size of grid and make it so one item per row*/\r\n\t}\r\n\t.menu-item-card {\r\n\t\tmargin-left: auto; /* since we changed width do margin to center in grid*/\r\n\t\tmargin-right: auto;\r\n\t\twidth: 80%; /* Change the width of the menu item now it's on a smaller screen */\r\n\t}\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n\t--letter-spacing: 4px;\r\n\t--border-radius: 6px;\r\n\t--font-family: monospace;\r\n\t--btn-padding: 10px 12px;\r\n\t--btn-font-weight: 700;\r\n\t--transition: all 0.2s ease-in-out;\r\n}\r\n\r\n* {\r\n\tbox-sizing: border-box;\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\ttransition: var(--transition);\r\n}\r\nul, ol {\r\n\tlist-style: none;\r\n}\r\na {\r\n\ttext-decoration: none;\r\n}\r\n\r\nbutton {\r\n\tletter-spacing: var(--letter-spacing);\r\n\tpadding: var(--btn-padding);\r\n\tcursor: pointer;\r\n\tfont-weight: var(--btn-font-weight);\r\n}\r\n\r\n/* Have an image as the background of the page */\r\nbody {\r\n\tbackground: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n\tbackground-repeat: no-repeat;\r\n\t/* Properly centers image on page  */\r\n\tbackground-position: center center; \r\n\t/* Stays in place whilst scrolling */\r\n\tbackground-attachment: fixed;\r\n\t/* Scale dimensions to container and try to maintain aspect ratio */\r\n\tbackground-size: cover;\r\n\tfont-family: var(--font-family);\r\n\tfont-size: 14px;\r\n}\r\n\r\n.content {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n}\r\n\r\n/* header styling */\r\nheader {\r\n\tpadding: 14px 12px;\r\n\tbackground-color: black;\r\n\topacity: 0.80;\r\n\ttext-align: center;\r\n\tcolor: white;\r\n}\r\n\r\n/* Nav styling */\r\nnav {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 1fr 2fr 1fr;\r\n\talign-items: center;\r\n}\r\nnav > ul {\r\n\tdisplay: flex;\r\n\tflex-direction: row;\r\n}\r\n.nav-links-main {\r\n\tjustify-content: space-evenly;\r\n\twidth: 70%;\r\n\tmargin: 0 auto;\r\n}\r\n.nav-links-secondary {\r\n\tjustify-content: space-evenly;\t\r\n}\r\n\r\n/* Color the text in the nav items */\r\n.nav-item > *,\r\nh1 {\r\n\tfont-size: 20px;\r\n\tcolor: white;\r\n} \r\n\r\n/* Style main 3 nav buttons, and then also the links */\r\n.nav-button {\r\n\tborder-style: solid;\r\n\tborder: none;\r\n\tbackground: inherit;\r\n}\r\n\r\nnav .nav-button,\r\nfooter a,\r\n.nav-links-secondary a {\r\n\tpadding-bottom: 4px;\r\n\tborder-bottom: 2px solid transparent;\r\n}\r\n/* Now on hover, reveal the bottom border */\r\nnav .nav-button:hover,\r\n.footer-nav-links a:hover,\r\n.nav-links-secondary a:hover {\r\n\tborder-bottom: 2px solid white;\r\n}\r\n\r\n/* For the active button, which is the button that indicates the tab being used, we will underline it with border */\r\nnav .nav-button[data-active] {\r\n\tborder-bottom: 2px solid white;\r\n}\r\n\r\n/* footer styling */\r\nfooter {\r\n\tjustify-self: flex-end;\r\n\tbackground-color: rgba(0,0,0, 0.3);\r\n\tcolor: white;\r\n\ttext-align: center;\r\n\tpadding: 12px 0;\t\r\n\twidth: 100%;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\talign-items: center;\r\n\trow-gap: 10px;\t\r\n}\r\n/* Make the ul's both flex-boxes */\r\nfooter > ul {\r\n\tdisplay: flex;\r\n\tcolumn-gap: 30px;\r\n}\r\nfooter .social-icon-img {\r\n\theight: 20px;\r\n}\r\nfooter a {\r\n\tcolor: inherit;\r\n}\r\n\r\n/* Adding vertical margin to the main content section to help with spacing since it's going to be switching tabs */\r\n.main-content {\r\n\tmargin: 16px 0;\r\n}\r\n\r\n/* Home content page styling */\r\n/* Welcome section */\r\n#welcome-section {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tcolor: white;\r\n\ttext-align: center;\r\n\twidth: 50%;\r\n\tmargin: 24px auto;\r\n\tpadding: 12px 16px;\r\n\tborder-radius:  var(--border-radius);\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\trow-gap: 20px;\r\n\talign-items: center;\r\n}\r\n#home-page-img-el {\r\n\twidth: 200px;\r\n\tborder-radius: var(--border-radius);\t\r\n}\r\n.page-divider {\r\n\twidth: 50%;\r\n\tmargin-left: auto;\r\n\tmargin-right: auto;\r\n}\r\n/* Styles the home content sections; these sections are different from the welcome section */\r\n.home-content-card {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tcolor: white;\r\n\twidth: 40%;\r\n\tmargin: 16px auto;\r\n\tpadding: 12px 16px;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\trow-gap: 12px;\r\n} \r\n\r\n/* Styles link on the home content cards, which looks like a button */\r\n.home-content-card a {\r\n\tcolor: black;\r\n\tfont-weight: var(--btn-font-weight);\r\n\tbackground-color: white;\r\n\tborder: 2px solid black;\r\n\tpadding: var(--btn-padding);\r\n\talign-self: flex-end;\r\n\tletter-spacing: var(--letter-spacing);\r\n}\r\n.home-content-card a:hover {\r\n\tbackground-color: black;\r\n\tcolor: white;\r\n}\r\n\r\n\r\n/* Styling for menu tab or menu-content-section */\r\n.menu-content-section {\r\n\tmargin: 12px 16px;\r\n\ttext-align: center;\r\n\tcolor: white;\r\n}\r\n\r\n/* Styling the menu grid */\r\n.menu-items-grid {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\tmargin: 0 auto;\r\n\tpadding: 20px 24px;\r\n\tdisplay: grid;\r\n\twidth: 70%;\r\n\t/* The size of the cards will be kind of limited, but that's okay */\r\n\tgrid-template-columns: repeat(2, 1fr);\r\n\t/* Rows are at least 150px or just fits the width of the container if there's too much content inside of it */\r\n\tgrid-auto-rows: minmax(160px, max-content);\r\n\tcolor: inherit;\t\r\n\tcolumn-gap: 12px;\r\n\trow-gap: 20px;\r\n}\r\n\r\n/* Styling for each menu card */\r\n.menu-item-card {\r\n\tpadding: 8px 12px;\r\n\tborder-radius: var(--border-radius);\r\n\tdisplay: flex;\r\n\tcolor: white;\r\n\tbackground-color: rgba(0,0,0, 0.7);\r\n}\r\n\r\n/* Styling the cards that display the menu items */\r\n.menu-item-image {\r\n\twidth: 150px;\r\n\theight: 150px;\r\n\tborder-radius: var(--border-radius);\r\n\t/* Fixes blank space at bottom of image container */\r\n\tvertical-align: top;\r\n}\r\n\r\n/* Styling for the item info in the menu card */\r\n.menu-item-info {\r\n\tmargin-left: 8px;\r\n\tflex: 1; /*So it takes up remaining space not taken by the image*/\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\talign-items: center;\r\n\tjustify-content: space-between;\r\n}\r\n\r\n.menu-item-info .item-price-el {\r\n\tfont-style: italic;\r\n}\r\n\r\n/* Styling the order button */\r\n.menu-order-btn {\r\n\tbackground-color: white;;\r\n\tborder: 2px solid black;\r\n\tcolor: black;\r\n}\r\n.menu-order-btn:hover {\r\n\tbackground-color: black;\r\n\tcolor: white;\r\n}\r\n\r\n/* About page styling */\r\n.about-content {\r\n\tbackground-color: rgba(0,0,0, 0.5);\r\n\twidth: 50%;\r\n\tmargin: 0 auto;\r\n\theight: 500px;\r\n\tcolor: white;\r\n\tpadding: 20px 24px;\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tjustify-content: space-between;\r\n\talign-items: center;\r\n}\r\n\r\n/* Styling for the quote */\r\nblockquote {\r\n\tquotes: \"\\201C\" \"\\201D\"; /*sets quotation marks to be used*/\r\n}\r\nblockquote::before {\r\n\tcontent: open-quote;\r\n}\r\nblockquote::after {\r\n\tcontent: close-quote;\r\n}\r\n#quote-text {\r\n\tdisplay: inline;\r\n}\r\n\r\n/* Styling for the section containing contact and restaurant information */\r\n.contact-info-section {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\talign-items: center;\r\n\trow-gap: 12px;\r\n}\r\n\r\n/* Media query for smaller screens  */\r\n\r\n/* If screen is 1100px or lower then we change the grid to we better*/\r\n@media screen and (max-width: 1100px) {\r\n\r\n\t.menu-items-grid {\r\n\t\tgrid-template-columns: 1fr;\r\n\t\twidth: 60%; /* change size of grid and make it so one item per row*/\r\n\t}\r\n\t.menu-item-card {\r\n\t\tmargin-left: auto; /* since we changed width do margin to center in grid*/\r\n\t\tmargin-right: auto;\r\n\t\twidth: 80%; /* Change the width of the menu item now it's on a smaller screen */\r\n\t}\r\n}\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -721,6 +721,91 @@ function createMenuContent(containerSection) {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createMenuContent);
 
+/***/ }),
+/* 16 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// For creating about page
+
+// object that contains company information
+const companyInfoModule = {
+	"phone-number": "555-5555",
+	"address": "123 Cooking and Chefs Drive",
+	"email": "HighDining@kitchen.com",
+}
+
+// Function that loads content from the about section onto the main-content section element
+function createAboutContent(containerSection) {
+	// Create section for containing content in the about tab/section
+	const aboutContentSection = document.createElement("section");
+	aboutContentSection.classList.add("about-content");
+
+	// Create quote elements
+	const blockQuote = document.createElement("blockquote");
+	const quoteTextEl = document.createElement("h2");
+	quoteTextEl.textContent = "Food isn't just a meal, it's art, it's creativity, but most importantly it's a time for rest.";
+	quoteTextEl.id = "quote-text";
+
+	// Put quote text inside block quote and then put block quote into our about content section
+	blockQuote.appendChild(quoteTextEl);
+	aboutContentSection.appendChild(blockQuote);
+
+	// Create page divider and add it to content section
+	const pageDivider = document.createElement("hr");
+	pageDivider.classList.add("page-divider");
+	aboutContentSection.appendChild(pageDivider);
+
+	// Create mission statement text, and append to the content section
+	const missionStatementEl = document.createElement("h2");
+	missionStatementEl.textContent = `We are constantly working towards not only maintaining high standards for our customers' dining experience, 
+	but are constantly looking for new ways to improve our craft and expand to new culinary horizons.`;
+	missionStatementEl.id = "company-mission-statement";
+	aboutContentSection.appendChild(missionStatementEl);
+
+	// Create a second page divider; if you used the same page divider, it remembers and will move it to a new location; we create 2 to put 2 on the DOM
+	const secondPageDivider = document.createElement("hr");
+	secondPageDivider.classList.add("page-divider");
+	aboutContentSection.appendChild(secondPageDivider);
+
+	// Create section that contains contact information about the restaurant
+	const contactInfoSection = document.createElement("section");
+	contactInfoSection.classList.add("contact-info-section");
+
+	// Create contact information text: header text for the section, phone number, email, and address
+	const sectionHeader = document.createElement("h1")
+	sectionHeader.textContent = "Contact information:";
+	contactInfoSection.appendChild(sectionHeader);
+
+	const phoneNumberEl = document.createElement("h2");
+	phoneNumberEl.id = "phone-number-el";
+	phoneNumberEl.textContent = `Phone Number: ${companyInfoModule["phone-number"]}`;
+	contactInfoSection.appendChild(phoneNumberEl);
+
+	const emailAddressEl = document.createElement("h2");
+	emailAddressEl.id = "email-address-el";
+	emailAddressEl.textContent = `Email: ${companyInfoModule["email"]}`;
+	contactInfoSection.appendChild(emailAddressEl);
+
+	const addressEl = document.createElement("h2");
+	addressEl.id = "address-el";
+	addressEl.textContent = `Address: ${companyInfoModule["address"]}`;
+	contactInfoSection.appendChild(addressEl);
+
+	// Finally append the contact info section into the aboutContentSection
+	aboutContentSection.appendChild(contactInfoSection);
+	// Then append the content from the about section to main container
+	containerSection.appendChild(aboutContentSection);
+
+	// Return the containerSection
+	return containerSection;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createAboutContent);
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -867,6 +952,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _initalPageLoad__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
 /* harmony import */ var _homePage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
 /* harmony import */ var _menuPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
+/* harmony import */ var _aboutPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(16);
+
+
 
 
 
@@ -888,9 +976,6 @@ const pageContentModule = (() => {
 
 	// Get the tab buttons; let's also create the logic for tab switching
 	const tabBtns = headerEl.querySelectorAll(".nav-button");
-
-	// Represents the data-page attribute of the active button; this allows us to keep track of what tab we're currently on
-	// It will later help with persisting on the page the user was last on.
 
 	// Create event listener for all buttons
 	tabBtns.forEach(btn => {
@@ -930,15 +1015,13 @@ function loadTabContent(pageID) {
 		// Then we get back the new mainContentSection in case we need to use it.
 		pageContentModule.mainContentSection = (0,_homePage__WEBPACK_IMPORTED_MODULE_2__["default"])(pageContentModule.mainContentSection);
 	} else if (pageID == "menu") {
-		
 		pageContentModule.mainContentSection = (0,_menuPage__WEBPACK_IMPORTED_MODULE_3__["default"])(pageContentModule.mainContentSection);
 	} else {
-		console.log("user tried to go to the about/contact tab");
+		pageContentModule.mainContentSection = (0,_aboutPage__WEBPACK_IMPORTED_MODULE_4__["default"])(pageContentModule.mainContentSection);
 	}
 }
 
-
- 
+// On window load we just load the home page content
 window.addEventListener("DOMContentLoaded", () => {
 	loadTabContent("home"); // load the home page
 });
